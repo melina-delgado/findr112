@@ -20,7 +20,9 @@
 </head>
 
 <header>
-<h1>Welcome to Yale Lost and Found!</h1>
+<h1>Welcome to <img src="findr112/fina/src/main/findr.png"/> 
+<br></br>
+Yale's lost and found!</h1>
 </header>
 
 <body>
