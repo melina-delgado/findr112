@@ -18,13 +18,12 @@
 <head>
     <link type="text/css" rel="stylesheet" href="/stylesheets/main.css"/>
 </head>
+<div class="logo">
+<a href="https://findr-1300.appspot.com/guestbook.jsp"><img src="findr.png" width="100"/></a>
+</div>
 
 <header>
-<h1>Welcome to <img src="findr.png"/> 
-<br></br>
-Yale's lost and found!</h1>
-</header>
-
+<div class="title"><h1>Welcome to Yale's lost and found!</h1></title></header>
 <body>
 
 <%
@@ -68,11 +67,11 @@ Yale's lost and found!</h1>
 
     if (greetings.isEmpty()) {
 %>
-<p>There are no '${fn:escapeXml(guestbookName)}' items.</p>
+<p>There are currently no lost or found items.</p>
 <%
     } else {
 %>
-<p>Things that have been '${fn:escapeXml(guestbookName)}'.</p>
+<p>Current lost and found items:</p>
 <%
       // Look at all of our greetings
         for (Greeting greeting : greetings) {
@@ -102,7 +101,6 @@ Yale's lost and found!</h1>
     <input type="hidden" name="guestbookName" value="${fn:escapeXml(guestbookName)}"/>
 </form>
 <%-- //[END datastore]--%>
-
 <div class="dropdown">
   <button class="dropbtn">Dropdown</button>
   <div class="dropdown-content">
