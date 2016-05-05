@@ -68,11 +68,11 @@ Yale's lost and found!</h1>
 
     if (greetings.isEmpty()) {
 %>
-<p>There are currently no lost or found items.</p>
+<p>There are no '${fn:escapeXml(guestbookName)}' items.</p>
 <%
     } else {
 %>
-<p>Current lost and found items:</p>
+<p>Things that have been '${fn:escapeXml(guestbookName)}'.</p>
 <%
       // Look at all of our greetings
         for (Greeting greeting : greetings) {
@@ -102,10 +102,14 @@ Yale's lost and found!</h1>
     <input type="hidden" name="guestbookName" value="${fn:escapeXml(guestbookName)}"/>
 </form>
 <%-- //[END datastore]--%>
-<form action="/guestbook.jsp" method="get">
-    <div><input type="text" name="guestbookName" value="${fn:escapeXml(guestbookName)}"/></div>
-    <div><input type="submit" value="Switch Guestbook"/></div>
-</form>
+
+<div class="dropdown">
+  <button class="dropbtn">Dropdown</button>
+  <div class="dropdown-content">
+    <a href="https://findr-1300.appspot.com/guestbook.jsp?guestbookName=lost">Lost Directory</a>
+    <a href="https://findr-1300.appspot.com/guestbook.jsp?guestbookName=found">Found Directory</a>
+  </div>
+</div>
 
 </body>
 </html>
