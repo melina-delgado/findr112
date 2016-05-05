@@ -20,7 +20,7 @@
 </head>
 
 <header>
-<h1>Welcome to <img src="findr112/fina/src/main/findr.png"/> 
+<h1>Welcome to <img src="findr.png"/> 
 <br></br>
 Yale's lost and found!</h1>
 </header>
