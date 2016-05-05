@@ -68,11 +68,11 @@ Yale's lost and found!</h1>
 
     if (greetings.isEmpty()) {
 %>
-<p>'${fn:escapeXml(guestbookName)}' has no lost or found items.</p>
+<p>There are currently no lost or found items.</p>
 <%
     } else {
 %>
-<p>Messages in Guestbook '${fn:escapeXml(guestbookName)}'.</p>
+<p>Current lost and found items:</p>
 <%
       // Look at all of our greetings
         for (Greeting greeting : greetings) {
