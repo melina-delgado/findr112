@@ -103,9 +103,9 @@ Yale's lost and found!</h1>
 </form>
 <%-- //[END datastore]--%>
 <form action="/guestbook.jsp" method="get">
-    <div class="guestbookName">
+    <div class="dropdown">
   <button onclick="myFunction()" class="dropbtn">Dropdown</button>
-  <div id="myDropdown" class="guestbookName-content">
+  <div id="myDropdown" class="dropdown-content">
     <p>Lost Items</p>
     <p>Found Items</p>
   </div>
