@@ -67,11 +67,11 @@
 
     if (greetings.isEmpty()) {
 %>
-<p>There are currently no lost or found items.</p>
+<p>There are no '${fn:escapeXml(guestbookName)}' items.</p>
 <%
     } else {
 %>
-<p>Current lost and found items:</p>
+<p>Things that have been '${fn:escapeXml(guestbookName)}'.</p>
 <%
       // Look at all of our greetings
         for (Greeting greeting : greetings) {
