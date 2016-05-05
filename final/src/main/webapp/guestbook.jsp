@@ -103,7 +103,13 @@ Yale's lost and found!</h1>
 </form>
 <%-- //[END datastore]--%>
 <form action="/guestbook.jsp" method="get">
-    <div><input type="text" name="guestbookName" value="${fn:escapeXml(guestbookName)}"/></div>
+    <div class="dropdown">
+  <button onclick="myFunction()" class="dropbtn">Dropdown</button>
+  <div id="myDropdown" class="dropdown-content">
+    <p>Lost Items</p>
+    <p>Found Items</p>
+  </div>
+</div>
     <div><input type="submit" value="Switch Guestbook"/></div>
 </form>
 
